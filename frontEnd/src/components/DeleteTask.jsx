@@ -7,7 +7,7 @@ const DeleteTask = () => {
 
     const deleteTask = async () => {
         try {
-            const response = await fetch(`http://localhost:3000/tasks/deleteTask/${taskId}`, {
+            const response = await fetch(`https://to-do-web-aivkndehk-mindulas-projects.vercel.app/tasks/deleteTask/${taskId}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',

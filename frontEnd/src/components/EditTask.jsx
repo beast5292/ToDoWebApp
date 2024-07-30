@@ -10,7 +10,7 @@ const EditTask = () => {
 
     const fetchTask = async () => {
         try {
-            const response = await fetch(`http://localhost:3000/task/${taskId}`);
+            const response = await fetch(`https://to-do-web-aivkndehk-mindulas-projects.vercel.app/task/${taskId}`);
             if (!response.ok) {
                 console.log('Error occured while fetching data');
             }
@@ -34,7 +34,7 @@ const EditTask = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch(`http://localhost:3000/tasks/editTask/${taskId}`, {
+            const response = await fetch(`https://to-do-web-aivkndehk-mindulas-projects.vercel.app/tasks/editTask/${taskId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'

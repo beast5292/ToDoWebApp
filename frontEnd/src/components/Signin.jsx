@@ -10,7 +10,7 @@ const Signin = () => {
     e.preventDefault();
 
     // It's called response since it holds the response returned by the 'fetch' function
-    const response = await fetch('http://localhost:3000/signin', {
+    const response = await fetch('https://to-do-web-aivkndehk-mindulas-projects.vercel.app/signin', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
