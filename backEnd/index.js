@@ -18,7 +18,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.use('/', (req, res) => {
-    res.json({ message: 'Default route' });
+    res.send('Default route');
 });
 
 // User POST route
