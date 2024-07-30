@@ -15,7 +15,7 @@ const port = process.env.PORT || 3000;
 const db_URI = process.env.DB_URI;
 
 // Allow a specific domain
-const allowedDomain = 'https://to-do-web-aivkndehk-mindulas-projects.vercel.app';
+const allowedDomain = 'https://to-do-web-dc2rh7hlz-mindulas-projects.vercel.app/';
 
 app.use(cors({
     origin: allowedDomain
