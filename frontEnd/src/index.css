@@ -1,0 +1,59 @@
+.signup-container, .signin-container, .addTask-container, .editTask-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-form, .signin-form{
+    border: 2px solid black;
+    box-sizing: border-box;
+    height: 250px;
+    width: 300px;
+    border-radius: 6px;
+    text-align: center;
+    background-color: rgb(224, 235, 224);
+}
+
+.signup-button, .signin-button, .addTask-button, .editTask-button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+label{
+    display: block;
+}
+
+.addTask-form, .editTask-form{
+    border: 2px solid black;
+    box-sizing: border-box;
+    height: 320px;
+    width: 300px;
+    border-radius: 6px;
+    text-align: center;
+    background-color: rgb(224, 235, 224);
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+.task-container{
+    box-sizing: border-box;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(225, 225, 224);
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.invisible-elements{
+    color: rgb(225, 225, 224);;
+}
