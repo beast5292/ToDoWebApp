@@ -12,7 +12,7 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 3000;
 
-const db_URI = process.env.db_URI;
+const db_URI = process.env.DB_URI;
 
 const corsOptions = {
     origin: 'http://localhost:3000',
