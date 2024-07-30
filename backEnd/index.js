@@ -12,18 +12,22 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 3000;
 
-const db_URI = process.env.DB_URI;
+const db_URI = process.env.db_URI;
 
-// Allow a specific domain
-const allowedDomain = 'https://to-do-web-dc2rh7hlz-mindulas-projects.vercel.app/';
+const corsOptions = {
+    origin: 'http://localhost:3000',
+    methods: 'GET,PUT,POST,DELETE',
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true,
+    optionsSuccessStatus: 200
+};
 
-app.use(cors({
-    origin: allowedDomain
-  }));
+app.use(cors(corsOptions));
+
 app.use(bodyParser.json());
 
 app.use('/', (req, res) => {
-    res.send('Default route');
+    res.json({ message: 'Default route' });
 });
 
 // User POST route
