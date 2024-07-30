@@ -8,7 +8,7 @@ const Userpage = () => {
 
   const fetchTasks = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/tasks/${userId}`);
+      const response = await fetch(`https://to-do-web-app-chi.vercel.app/tasks/${userId}`);
       const data = await response.json();
       setTasks(data);
     } catch (error) {

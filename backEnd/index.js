@@ -15,7 +15,7 @@ const port = process.env.PORT || 3000;
 const db_URI = process.env.DB_URI;
 
 const corsOptions = {
-    origin: 'http://localhost:3000',
+    origin: 'http://localhost:5173',
     methods: 'GET,PUT,POST,DELETE',
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true,
